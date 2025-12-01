@@ -55,12 +55,42 @@ C:\Users\$USER_NAME$\Desktop\LAUNCHERS
 
 ---
 
-## 🛠 Installation
+# 🐍 Installation (avec environnement virtuel)
 
-### 1️⃣ Installer Python 3.10+  
-Télécharger depuis : https://www.python.org/downloads/
+Il est **fortement recommandé** d’utiliser un environnement virtuel pour isoler l’application.
 
-Assurez-vous de cocher **"Add Python to PATH"**.
+---
+
+## 1️⃣ Installer Python 3.10+  
+Téléchargement : https://www.python.org/downloads/
+
+Assurez-vous de cocher :  
+✔ **Add Python to PATH**
+
+---
+
+## 2️⃣ Créer un environnement virtuel
+
+Dans le dossier `game-launcher/` :
+
+```bash
+python -m venv .venv
+```
+
+Cela crée un dossier :
+```YAML
+.venv/
+```
+
+---
+
+## 3️⃣ Activer l'environnement virtuel
+Sous Windows :
+```bash
+.venv\Scripts\activate
+```
+
+Vous devez voir (venv) apparaître dans le terminal.
 
 ---
 
@@ -69,15 +99,15 @@ Assurez-vous de cocher **"Add Python to PATH"**.
 Ouvrez un terminal dans le dossier du projet :
 
 ```bash
-pip install customtkinter pillow pywin32
+pip install -r requirements.txt
 ```
 
 ▶️ Lancement de l’application (mode développement)
 Dans le dossier où se trouve launcher.py :
 
-bash
-Copier le code
+```bash
 python launcher.py
+```
 L'application s'ouvre immédiatement.
 
 🧊 Générer un vrai .exe Windows
